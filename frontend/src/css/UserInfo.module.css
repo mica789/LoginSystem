@@ -1,0 +1,57 @@
+.userCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 20px 0 40px;
+}
+
+.userCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.avatarContainer {
+  width: 5rem;
+  height: 5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #e0e7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.avatarContainer:hover {
+  background-color: #c7d2fe;
+}
+
+.avatarInitial {
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.userName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.userEmail {
+  color: #6b7280;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  margin: 0;
+}

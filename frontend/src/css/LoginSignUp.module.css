@@ -1,0 +1,120 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.text {
+  color: #3c009d;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background: #3c009d;
+  border-radius: 3px;
+  margin: 20px auto;
+}
+
+.inputs {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: white;
+  border-radius: 6px;
+}
+
+.input img {
+  margin: 0px 30px;
+}
+
+.input input {
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 19px;
+}
+
+.submitContainer {
+  display: flex;
+  gap: 30px;
+  margin: 60px auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #4c00b4;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gray {
+  background: #eaeaea;
+  color: #676767;
+}
+
+.toggleButton {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0731a3;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.toggleButton.active {
+  color: #3c009d;
+  background-color: #ffffff;
+  border-color: #3c009d;
+}
+
+.errorText {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}

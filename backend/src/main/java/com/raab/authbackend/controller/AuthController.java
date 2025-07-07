@@ -39,7 +39,7 @@ public class AuthController {
         try {
             User createdUser = userService.registerUser(user);
             createdUser.setPassword(null);
-            return ResponseEntity.ok(createdUser);
+            return ResponseEntity.ok(Map.of("message", "User registered successfully"));
         } catch (IllegalArgumentException e) {
             return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
         }
@@ -61,7 +61,9 @@ public class AuthController {
 
             User loggedInUser = userService.loginUser(username, password);
             loggedInUser.setPassword(null);
-            return ResponseEntity.ok(loggedInUser);
+            return ResponseEntity.ok(Map.of(
+                    "username: ", username
+            ));
 
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", e.getMessage()));
