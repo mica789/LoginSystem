@@ -27,7 +27,7 @@ Make sure your development environment has:
 Clone the project
 
 ```bash
-  git clone https://github.com/mica789/LoginSystem/tree/main
+  git clone https://github.com/mica789/LoginSystem.git
 ```
 
 Go to the project directory
